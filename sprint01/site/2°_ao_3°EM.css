@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #eef2f8;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background: #1d3f78;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon i {
+    color: #e63946;
+    font-size: 30px;
+    transform: rotate(45deg);
+}
+
+.logo h1 {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.guia {
+    color: white;
+}
+
+.sesi {
+    color: #e63946;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.texto-usuario {
+    text-align: right;
+    color: white;
+}
+
+.texto-usuario h3 {
+    font-size: 16px;
+}
+
+.texto-usuario p {
+    font-size: 13px;
+    opacity: .8;
+}
+
+.usuario img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+main {
+    width: 900px;
+    margin: 70px auto;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+    gap: 35px;
+}
+
+.botoes a {
+    width: 250px;
+    height: 150px;
+    background: #d63b4a;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 3px solid #173d7a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: .3s;
+    box-shadow: 0 8px 18px rgba(0,0,0,.18);
+}
+
+.botoes a:hover {
+    transform: translateY(-8px);
+    background: #173d7a;
+    box-shadow: 0 12px 25px rgba(0,0,0,.22);
+}
+
+.botoes i {
+    font-size: 46px;
+}
+
+@media(max-width: 900px) {
+    main {
+        width: 95%;
+    }
+
+    .botoes {
+        grid-template-columns: 1fr;
+    }
+}
