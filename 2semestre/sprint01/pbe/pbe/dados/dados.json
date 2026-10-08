@@ -29,6 +29,13 @@
             "disciplina": "Ciências",
             "prazo": "2026-10-15",
             "status": "Pendente"
+        },
+        {
+            "id": 2,
+            "titulo": "Trabalho de Matemática",
+            "disciplina": "Matemática",
+            "prazo": "2026-10-15",
+            "status": "Pendente"
         }
     ],
     "avisos": [
@@ -37,6 +44,12 @@
             "titulo": "Reunião de pais",
             "mensagem": "A reunião acontecerá na sexta-feira.",
             "data": "2026-10-02"
+        },
+        {
+            "id": 2,
+            "titulo": "Reunião de pais",
+            "mensagem": "A reunião acontecerá na próxima semana.",
+            "data": "2026-10-15"
         }
     ],
     "materiais": [
@@ -46,6 +59,13 @@
             "disciplina": "Matemática",
             "tipo": "PDF",
             "link": "https://exemplo.com/matematica.pdf"
+        },
+        {
+            "id": 2,
+            "titulo": "Material de Matemática",
+            "disciplina": "Matemática",
+            "tipo": "PDF",
+            "link": "https://exemplo.com/material"
         }
     ]
 }
