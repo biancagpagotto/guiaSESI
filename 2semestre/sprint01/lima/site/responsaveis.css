@@ -123,21 +123,3 @@ main {
 .botoes i {
     font-size: 46px;
 }
-
-.botoes a:last-child{
-    margin:0 auto;
-}
-
-@media(max-width: 900px) {
-    main {
-        width: 95%;
-    }
-
-    .botoes {
-        grid-template-columns: 1fr;
-    }
-
-    .botoes a:last-child {
-        grid-column: auto;
-    }
-}
