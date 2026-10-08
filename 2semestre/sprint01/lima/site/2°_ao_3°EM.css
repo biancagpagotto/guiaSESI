@@ -123,13 +123,3 @@ main {
 .botoes i {
     font-size: 46px;
 }
-
-@media(max-width: 900px) {
-    main {
-        width: 95%;
-    }
-
-    .botoes {
-        grid-template-columns: 1fr;
-    }
-}
