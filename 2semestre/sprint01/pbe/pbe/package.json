@@ -1,0 +1,16 @@
+{
+  "name": "pbe",
+  "version": "1.0.0",
+  "description": "Backend GuiaSESI",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
