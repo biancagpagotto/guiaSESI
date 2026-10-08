@@ -127,29 +127,3 @@ footer {
     padding: 15px 0;
     margin-top: auto;
 }
-
-@media (max-width: 650px) {
-
-    header {
-        padding-top: 30px;
-    }
-
-    header h1 {
-        font-size: 34px;
-    }
-
-    section {
-        width: 90%;
-        padding: 35px 25px 40px;
-    }
-
-    .botoes {
-        gap: 7px;
-    }
-
-    .botoes a {
-        width: 25%;
-        height: 65px;
-        font-size: 13px;
-    }
-}

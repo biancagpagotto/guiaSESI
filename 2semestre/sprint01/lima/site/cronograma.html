@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GuiaSESI - Cronograma Escolar</title>
+
+    <link rel="stylesheet" href="cronograma.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-compass"></i>
+            </div>
+
+            <h1>
+                <span class="guia">Guia</span><span class="sesi">SESI</span>
+            </h1>
+        </div>
+
+        <div class="usuario">
+            <div class="texto-usuario">
+                <h3>Aluno(a)</h3>
+                <p>Série - Turma</p>
+            </div>
+
+            <img src="perfil.png" alt="Perfil">
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <h2>Cronograma Escolar</h2>
+
+        <div class="conteudo">
+
+            <!-- Calendário -->
+            <div class="calendario">
+
+                <div class="mes">
+
+                    <button>
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <h3>Setembro 2026</h3>
+
+                    <button>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+                <div class="dias-semana">
+                    <div>Dom</div>
+                    <div>Seg</div>
+                    <div>Ter</div>
+                    <div>Qua</div>
+                    <div>Qui</div>
+                    <div>Sex</div>
+                    <div>Sáb</div>
+                </div>
+
+                <div class="dias">
+
+                    <div class="vazio"></div>
+
+                    <div class="dia">1</div>
+                    <div class="dia">2</div>
+                    <div class="dia">3</div>
+                    <div class="dia">4</div>
+                    <div class="dia evento-vermelho">5</div>
+                    <div class="dia">6</div>
+
+                    <div class="dia">7</div>
+                    <div class="dia">8</div>
+                    <div class="dia evento-verde">9</div>
+                    <div class="dia">10</div>
+                    <div class="dia">11</div>
+                    <div class="dia">12</div>
+                    <div class="dia">13</div>
+
+                    <div class="dia">14</div>
+                    <div class="dia">15</div>
+                    <div class="dia">16</div>
+                    <div class="dia evento-roxo">17</div>
+                    <div class="dia">18</div>
+                    <div class="dia">19</div>
+                    <div class="dia">20</div>
+
+                    <div class="dia">21</div>
+                    <div class="dia">22</div>
+                    <div class="dia">23</div>
+                    <div class="dia">24</div>
+                    <div class="dia">25</div>
+                    <div class="dia evento-amarelo">26</div>
+                    <div class="dia">27</div>
+
+                    <div class="dia">28</div>
+                    <div class="dia">29</div>
+                    <div class="dia">30</div>
+
+                </div>
+
+            </div>
+
+            <!-- Informações -->
+            <div class="lateral">
+
+                <div class="card">
+
+                    <h3>Legenda</h3>
+
+                    <p><span class="verde"></span> Provas e Trabalhos</p>
+                    <p><span class="vermelho"></span> Feriados</p>
+                    <p><span class="roxo"></span> Tarefas</p>
+                    <p><span class="amarelo"></span> Outros</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Próximos Eventos</h3>
+
+                    <ul>
+                        <li>05 - Feriado</li>
+                        <li>09 - Prova de Matemática</li>
+                        <li>17 - Entrega do Trabalho</li>
+                        <li>26 - Feira Cultural</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

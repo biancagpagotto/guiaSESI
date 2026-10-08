@@ -89,9 +89,9 @@ main {
 }
 
 .botoes {
-    display: grid;
-    grid-template-columns: repeat(2, 250px);
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 35px;
 }
 
@@ -124,9 +124,8 @@ main {
     font-size: 46px;
 }
 
-.botoes a:last-child {
-    grid-column: 1 / span 2;
-    justify-self: center;
+.botoes a:last-child{
+    margin:0 auto;
 }
 
 @media(max-width: 900px) {

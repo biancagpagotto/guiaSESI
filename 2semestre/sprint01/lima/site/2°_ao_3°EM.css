@@ -88,11 +88,11 @@ main {
     margin: 70px auto;
 }
 
-.botoes {
-    display: grid;
-    grid-template-columns: repeat(2, 250px);
-    justify-content: center;
-    gap: 35px;
+.botoes{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:35px;
 }
 
 .botoes a {
