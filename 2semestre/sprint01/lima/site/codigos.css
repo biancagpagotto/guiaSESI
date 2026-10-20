@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #edf1f8;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background: #1d3f78;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon i {
+    color: #e63946;
+    font-size: 30px;
+    transform: rotate(45deg);
+}
+
+.logo h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.guia {
+    color: #ffffff;
+}
+
+.sesi {
+    color: #e63946;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.texto-usuario {
+    text-align: right;
+    color: white;
+}
+
+.texto-usuario h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.texto-usuario p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.usuario img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+main {
+    width: 95%;
+    margin: 35px auto;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.titulo h2 {
+    color: #1d3f78;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+.cartao {
+    background: white;
+    padding: 22px;
+    border: 2px solid #e0e5ee;
+    border-top: 6px solid #d83240;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartao h3 {
+    color: #1d3f78;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.cartao h3 i {
+    color: #d83240;
+    margin-right: 8px;
+}
+
+.cartao h4 {
+    color: #d83240;
+    font-size: 16px;
+    margin: 18px 0 8px;
+}
+
+.cartao p {
+    color: #222;
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.cartao strong {
+    color: #1d3f78;
+    font-weight: 700;
+}
