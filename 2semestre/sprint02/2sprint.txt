@@ -1,0 +1,14 @@
+terminar banco de dados 
+	-> insert 3 infos por tabela
+	-> verificar tabelas no der
+
+conectar backend com banco de dados
+	-> create
+	-> read
+
+continuar construção do site
+	-> áreas de cadastro
+	-> áreas de mostrar informações
+	-> preparar comunicação com backend
+
+data de entrega: 12/11
