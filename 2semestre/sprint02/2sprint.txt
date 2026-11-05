@@ -1,3 +1,4 @@
+
 terminar banco de dados 
 	-> insert 3 infos por tabela
 	-> verificar tabelas no der

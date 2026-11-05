@@ -1,0 +1,22 @@
+PBE: Helena
+
+BCD: DB - Sofia
+     MER DER Lógico - Marina
+     MER DER Conceitual - Isabela
+
+LIMA: login - Bianca
+      6° ao 1°EM - Isabela
+      2° ao 3°EM - Bianca
+      cronograma - Isabela
+      trabalhos e resumos - Isabela
+      sesi - Bianca
+      Toda a parte do senai - Bianca
+      professores - Isabela
+      responsáveis - Isabela
+      Toda a parte do passaporte - Sofia
+      Toda a parte dos professores - Marina
+      cardápio -Isabela
+      certificados - Isabela
+      passaporte - Sofia
+      carteirinha de estudante - Isabela
+      
