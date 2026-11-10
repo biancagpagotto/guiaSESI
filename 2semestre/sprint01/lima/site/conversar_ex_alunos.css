@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef2f8;
+}
+
+header{
+    width:100%;
+    height:90px;
+    background:#1d3f78;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:5px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo-icon i{
+    color:#e63946;
+    font-size:30px;
+    transform:rotate(45deg);
+}
+
+.logo h1{
+    font-size:46px;
+}
+
+.guia{
+    color:white;
+}
+
+.sesi{
+    color:#e63946;
+}
+
+.usuario{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.texto-usuario{
+    text-align:right;
+    color:white;
+}
+
+.texto-usuario h3{
+    font-size:16px;
+}
+
+.texto-usuario p{
+    font-size:13px;
+}
+
+.usuario img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:3px solid white;
+}
+
+main{
+    width:1200px;
+    margin:40px auto;
+}
+
+h2{
+    width:420px;
+    margin:0 auto 35px;
+    background:#d63b4a;
+    color:white;
+    text-align:center;
+    padding:12px;
+    border-radius:30px;
+    border:3px solid #173d7a;
+}
+
+.container{
+    display:flex;
+    gap:25px;
+}
+
+.contatos{
+    width:300px;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+
+.contatos h3{
+    color:#173d7a;
+    margin-bottom:20px;
+}
+
+.professor{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    border-radius:15px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.professor:hover{
+    background:#eef2f8;
+}
+
+.professor img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+}
+
+.professor h4{
+    color:#173d7a;
+}
+
+.professor p{
+    font-size:14px;
+}
+
+.chat{
+    flex:1;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+    display:flex;
+    flex-direction:column;
+}
+
+.topo-chat{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:20px;
+    border-bottom:2px solid #eee;
+}
+
+.topo-chat img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.topo-chat h3{
+    color:#173d7a;
+}
+
+.mensagens{
+    padding:25px;
+    flex:1;
+}
+
+.recebida,
+.enviada{
+    max-width:420px;
+    padding:15px;
+    border-radius:18px;
+    margin-bottom:15px;
+}
+
+.recebida{
+    background:#eef2f8;
+}
+
+.enviada{
+    background:#d63b4a;
+    color:white;
+    margin-left:auto;
+}
+
+.enviar{
+    display:flex;
+    gap:15px;
+    padding:20px;
+    border-top:2px solid #eee;
+}
+
+.enviar input{
+    flex:1;
+    height:50px;
+    border:2px solid #ccc;
+    border-radius:25px;
+    padding:0 20px;
+    font-size:16px;
+}
+
+.enviar button{
+    width:130px;
+    border:none;
+    border-radius:25px;
+    background:#d63b4a;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.enviar button:hover{
+    background:#173d7a;
+}

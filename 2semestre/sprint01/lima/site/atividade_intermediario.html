@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuiaSESI - Atividades Intermediárias</title>
+    <link rel="stylesheet" href="atividade_intermediario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-compass"></i>
+            </div>
+
+            <h1>
+                <span class="guia">Guia</span><span class="sesi">SESI</span>
+            </h1>
+        </div>
+
+        <div class="usuario">
+            <div class="texto-usuario">
+                <h3>Aluno(a)</h3>
+                <p>Série - Turma</p>
+            </div>
+            <img src="perfil.png" alt="Perfil">
+        </div>
+    </header>
+
+    <main>
+        <h2 class="titulo">Passaporte para o futuro</h2>
+        <h3 class="subtitulo">Atividades - Intermediário</h3>
+
+        <section class="conteudo">
+            <div class="atividade">
+                <h3>1. Phrasal Verbs</h3>
+                <p>O que significa o phrasal verb "Give up"?</p>
+                <label><input type="radio" name="q1" value="a"> Continuar</label>
+                <label><input type="radio" name="q1" value="b"> Desistir</label>
+                <label><input type="radio" name="q1" value="c"> Acordar</label>
+            </div>
+
+            <div class="atividade">
+                <h3>2. Past Perfect</h3>
+                <p>Complete: "She ___ finished her homework before dinner."</p>
+                <label><input type="radio" name="q2" value="a"> Had</label>
+                <label><input type="radio" name="q2" value="b"> Have</label>
+                <label><input type="radio" name="q2" value="c"> Has</label>
+            </div>
+
+            <div class="atividade">
+                <h3>3. Conditional</h3>
+                <p>Complete: "If I study, I ___ pass the exam."</p>
+                <label><input type="radio" name="q3" value="a"> Would</label>
+                <label><input type="radio" name="q3" value="b"> Will</label>
+                <label><input type="radio" name="q3" value="c"> Had</label>
+            </div>
+
+            <div class="atividade">
+                <h3>4. Modal Verbs</h3>
+                <p>Qual modal verb expressa habilidade?</p>
+                <label><input type="radio" name="q4" value="a"> Must</label>
+                <label><input type="radio" name="q4" value="b"> Should</label>
+                <label><input type="radio" name="q4" value="c"> Can</label>
+            </div>
+
+            <div class="atividade">
+                <h3>5. Passive Voice</h3>
+                <p>Qual é a forma passiva de "They built the house"?</p>
+                <label><input type="radio" name="q5" value="a"> The house was built by them.</label>
+                <label><input type="radio" name="q5" value="b"> The house built them.</label>
+                <label><input type="radio" name="q5" value="c"> They were built the house.</label>
+            </div>
+
+            <div class="atividade">
+                <h3>6. Linking Words</h3>
+                <p>Qual palavra significa "Entretanto"?</p>
+                <label><input type="radio" name="q6" value="a"> Because</label>
+                <label><input type="radio" name="q6" value="b"> However</label>
+                <label><input type="radio" name="q6" value="c"> Therefore</label>
+            </div>
+        </section>
+
+        <button onclick="corrigirAtividade()">Finalizar atividade</button>
+
+        <div id="resultado"></div>
+    </main>
+
+    <script>
+        function corrigirAtividade() {
+            const respostas = {
+                q1: "b",
+                q2: "a",
+                q3: "b",
+                q4: "c",
+                q5: "a",
+                q6: "b"
+            };
+
+            let acertos = 0;
+            let respondidas = 0;
+
+            for (let pergunta in respostas) {
+                const selecionada = document.querySelector('input[name="' + pergunta + '"]:checked');
+
+                if (selecionada) {
+                    respondidas++;
+
+                    if (selecionada.value === respostas[pergunta]) {
+                        acertos++;
+                    }
+                }
+            }
+
+            const resultado = document.getElementById("resultado");
+
+            if (respondidas < 6) {
+                resultado.innerHTML = "Responda todas as questões antes de finalizar!";
+            } else {
+                resultado.innerHTML = "Você acertou " + acertos + " de 6 questões!";
+            }
+        }
+    </script>
+</body>
+</html>

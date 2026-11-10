@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuiaSESI - Clubes</title>
+    <link rel="stylesheet" href="clubes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-compass"></i>
+            </div>
+            <h1>
+                <span class="guia">Guia</span><span class="sesi">SESI</span>
+            </h1>
+        </div>
+
+        <div class="usuario">
+            <div class="texto-usuario">
+                <h3>Aluno(a)</h3>
+                <p>Série - Turma</p>
+            </div>
+            <img src="perfil.png" alt="Perfil">
+        </div>
+    </header>
+
+    <main>
+        <h2 class="titulo">Clubes</h2>
+        <p class="subtitulo">Encontre seu clube favorito!</p>
+
+        <section class="conteudo">
+
+            <div class="card">
+                <i class="fa-solid fa-book-open icone"></i>
+                <h3>Clube do Livro</h3>
+                <p>Compartilhe leituras, conheça novas histórias e converse sobre seus livros favoritos.</p>
+                <button onclick="entrarNoClube('Clube do Livro')">Entrar no clube</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-calculator icone"></i>
+                <h3>Clube de Matemática</h3>
+                <p>Resolva desafios, participe de jogos e descubra a matemática de uma forma divertida.</p>
+                <button onclick="entrarNoClube('Clube de Matemática')">Entrar no clube</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-flask icone"></i>
+                <h3>Clube de Ciências</h3>
+                <p>Explore experiências, descubertas científicas e curiosidades sobre o mundo.</p>
+                <button onclick="entrarNoClube('Clube de Ciências')">Entrar no clube</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-language icone"></i>
+                <h3>Clube de Inglês</h3>
+                <p>Pratique inglês por meio de conversas, jogos, músicas e atividades.</p>
+                <button onclick="entrarNoClube('Clube de Inglês')">Entrar no clube</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-palette icone"></i>
+                <h3>Clube de Artes</h3>
+                <p>Desenvolva sua criatividade com desenhos, pinturas e diferentes formas de arte.</p>
+                <button onclick="entrarNoClube('Clube de Artes')">Entrar no clube</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-music icone"></i>
+                <h3>Clube de Música</h3>
+                <p>Descubra novos estilos musicais, compartilhe músicas e desenvolva seus talentos.</p>
+                <button onclick="entrarNoClube('Clube de Música')">Entrar no clube</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-masks-theater icone"></i>
+                <h3>Clube de Teatro</h3>
+                <p>Explore a atuação, a expressão corporal e participe de atividades teatrais.</p>
+                <button onclick="entrarNoClube('Clube de Teatro')">Entrar no clube</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-code icone"></i>
+                <h3>Clube de Programação</h3>
+                <p>Aprenda a criar sites, jogos e projetos utilizando a tecnologia.</p>
+                <button onclick="entrarNoClube('Clube de Programação')">Entrar no clube</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-moon icone"></i>
+                <h3>Clube de Astronomia</h3>
+                <p>Conheça planetas, estrelas, galáxias e os mistérios do universo.</p>
+                <button onclick="entrarNoClube('Clube de Astronomia')">Entrar no clube</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-earth-americas icone"></i>
+                <h3>Clube de Geografia</h3>
+                <p>Explore países, culturas, mapas e diferentes lugares do planeta.</p>
+                <button onclick="entrarNoClube('Clube de Geografia')">Entrar no clube</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-pen icone"></i>
+                <h3>Clube de Escrita</h3>
+                <p>Crie histórias, poesias e textos, desenvolvendo sua imaginação e escrita.</p>
+                <button onclick="entrarNoClube('Clube de Escrita')">Entrar no clube</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-comments icone"></i>
+                <h3>Clube de Debates</h3>
+                <p>Compartilhe opiniões, discuta assuntos atuais e desenvolva sua argumentação.</p>
+                <button onclick="entrarNoClube('Clube de Debates')">Entrar no clube</button>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        function entrarNoClube(nome) {
+            alert("Você demonstrou interesse em participar do " + nome + "!");
+        }
+    </script>
+
+</body>
+</html>

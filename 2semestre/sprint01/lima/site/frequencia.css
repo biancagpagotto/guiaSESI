@@ -1,0 +1,217 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body {
+background: #eef2f8;
+}
+
+header {
+width: 100%;
+height: 90px;
+background: #1d3f78;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 40px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.logo {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+.logo-icon {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+border: 5px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo-icon i {
+color: #e63946;
+font-size: 30px;
+transform: rotate(45deg);
+}
+.logo h1 {
+font-size: 46px;
+font-weight: 700;
+}
+.guia {
+color: white;
+}
+.sesi {
+color: #e63946;
+}
+
+.usuario {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+.texto-usuario {
+text-align: right;
+color: white;
+}
+.texto-usuario h3 {
+font-size: 16px;
+}
+.texto-usuario p {
+font-size: 13px;
+}
+.usuario img {
+width: 55px;
+height: 55px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid white;
+}
+
+main {
+width: 90%;
+max-width: 1000px;
+margin: 40px auto;
+}
+
+h2 {
+width: 400px;
+max-width: 100%;
+background: #d63b4a;
+color: white;
+border: 3px solid #173d7a;
+border-radius: 30px;
+padding: 10px;
+text-align: center;
+margin: 0 auto 30px;
+font-size: 25px;
+}
+
+.dados-aluno {
+background: white;
+border: 2px solid #173d7a;
+border-radius: 18px;
+padding: 20px;
+display: flex;
+align-items: center;
+gap: 20px;
+margin-bottom: 25px;
+box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+.foto-aluno {
+width: 75px;
+height: 75px;
+border-radius: 50%;
+background: #1d3f78;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 35px;
+}
+.informacoes-aluno h3 {
+color: #173d7a;
+font-size: 20px;
+margin-bottom: 5px;
+}
+.informacoes-aluno p {
+color: #555;
+font-size: 14px;
+}
+
+.resumo {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-bottom: 35px;
+}
+.card-resumo {
+background: white;
+border: 2px solid #173d7a;
+border-radius: 18px;
+width: 33.3%;
+padding: 22px;
+text-align: center;
+box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+transition: 0.3s;
+}
+.card-resumo:hover {
+transform: translateY(-5px);
+}
+.card-resumo i {
+color: #d63b4a;
+font-size: 30px;
+margin-bottom: 10px;
+}
+.card-resumo h3 {
+color: #173d7a;
+font-size: 28px;
+}
+.card-resumo p {
+color: #555;
+font-size: 14px;
+}
+.historico {
+background: white;
+border: 2px solid #173d7a;
+border-radius: 18px;
+padding: 25px;
+box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+.historico h3 {
+color: #173d7a;
+font-size: 22px;
+margin-bottom: 20px;
+}
+.tabela-container {
+width: 100%;
+overflow-x: auto;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+text-align: center;
+}
+th {
+background: #1d3f78;
+color: white;
+padding: 14px;
+font-size: 14px;
+}
+td {
+padding: 14px;
+color: #444;
+border-bottom: 1px solid #ddd;
+font-size: 14px;
+}
+tr:hover {
+background: #f1f4f9;
+}
+.presente {
+background: #d9f2df;
+color: #247a3b;
+padding: 6px 14px;
+border-radius: 20px;
+font-weight: 600;
+}
+.falta {
+background: #f9dadd;
+color: #bd2635;
+padding: 6px 14px;
+border-radius: 20px;
+font-weight: 600;
+}
+
+.observacao {
+color: #555;
+font-size: 13px;
+margin-top: 20px;
+text-align: center;
+}
+.observacao i {
+color: #d63b4a;
+margin-right: 5px;
+}

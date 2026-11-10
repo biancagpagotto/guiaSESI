@@ -1,0 +1,136 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body {
+background: #eef2f8;
+}
+header {
+width: 100%;
+height: 90px;
+background: #1d3f78;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 40px;
+box-shadow: 0 4px 15px rgba(0,0,0,.15);
+}
+.logo {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+.logo-icon {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+border: 5px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo-icon i {
+color: #e63946;
+font-size: 30px;
+transform: rotate(45deg);
+}
+.logo h1 {
+font-size: 46px;
+font-weight: bold;
+}
+.guia {
+color: white;
+}
+.sesi {
+color: #e63946;
+}
+.usuario {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+.texto-usuario {
+text-align: right;
+color: white;
+}
+.texto-usuario h3 {
+font-size: 16px;
+}
+.texto-usuario p {
+font-size: 13px;
+}
+.usuario img {
+width: 55px;
+height: 55px;
+border-radius: 50%;
+border: 3px solid white;
+object-fit: cover;
+}
+main {
+width: 900px;
+max-width: 95%;
+margin: 40px auto;
+}
+.voltar:hover {
+color: #173d7a;
+}
+h2 {
+width: 280px;
+margin: 20px auto 35px;
+text-align: center;
+background: #d63b4a;
+color: white;
+border: 3px solid #173d7a;
+border-radius: 25px;
+padding: 10px;
+}
+.container {
+background: white;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0,0,0,.12);
+}
+.titulo-turma {
+text-align: center;
+margin-bottom: 20px;
+}
+.titulo-turma h3 {
+color: #173d7a;
+font-size: 25px;
+}
+.titulo-turma p {
+color: #777;
+font-size: 14px;
+}
+.quantidade {
+background: #eef2f8;
+color: #173d7a;
+padding: 12px;
+border-radius: 10px;
+font-weight: 600;
+margin-bottom: 20px;
+}
+.quantidade i {
+margin-right: 8px;
+color: #d63b4a;
+}
+.lista-alunos {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 12px 25px;
+padding-left: 35px;
+}
+.lista-alunos li {
+background: #f4f6fa;
+padding: 12px;
+border-radius: 8px;
+color: #333;
+font-size: 14px;
+transition: .3s;
+}
+.lista-alunos li:hover {
+background: #e3eaf5;
+transform: translateX(4px);
+}

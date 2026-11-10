@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuiaSESI - Atividades Avançadas</title>
+    <link rel="stylesheet" href="atividade_avancado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-compass"></i>
+            </div>
+
+            <h1>
+                <span class="guia">Guia</span><span class="sesi">SESI</span>
+            </h1>
+        </div>
+
+        <div class="usuario">
+            <div class="texto-usuario">
+                <h3>Aluno(a)</h3>
+                <p>Série - Turma</p>
+            </div>
+            <img src="perfil.png" alt="Perfil">
+        </div>
+    </header>
+
+    <main>
+        <h2 class="titulo">Passaporte para o futuro</h2>
+        <h3 class="subtitulo">Atividades - Avançado</h3>
+
+        <section class="conteudo">
+            <div class="atividade">
+                <h3>1. Present Perfect Continuous</h3>
+                <p>Complete: "She ___ studying English for three years."</p>
+                <label><input type="radio" name="q1" value="a"> Has been</label>
+                <label><input type="radio" name="q1" value="b"> Have been</label>
+                <label><input type="radio" name="q1" value="c"> Had been</label>
+            </div>
+
+            <div class="atividade">
+                <h3>2. Reported Speech</h3>
+                <p>Transforme a frase: He said, "I am tired."</p>
+                <label><input type="radio" name="q2" value="a"> He said he is tired.</label>
+                <label><input type="radio" name="q2" value="b"> He said he was tired.</label>
+                <label><input type="radio" name="q2" value="c"> He said he tired.</label>
+            </div>
+
+            <div class="atividade">
+                <h3>3. Relative Clauses</h3>
+                <p>Complete: "The woman ___ lives next door is a doctor."</p>
+                <label><input type="radio" name="q3" value="a"> Which</label>
+                <label><input type="radio" name="q3" value="b"> Where</label>
+                <label><input type="radio" name="q3" value="c"> Who</label>
+            </div>
+
+            <div class="atividade">
+                <h3>4. Future Perfect</h3>
+                <p>Complete: "By next year, I ___ graduated."</p>
+                <label><input type="radio" name="q4" value="a"> Will have</label>
+                <label><input type="radio" name="q4" value="b"> Will has</label>
+                <label><input type="radio" name="q4" value="c"> Have</label>
+            </div>
+
+            <div class="atividade">
+                <h3>5. Mixed Conditionals</h3>
+                <p>Complete: "If I had studied harder, I ___ have a better job now."</p>
+                <label><input type="radio" name="q5" value="a"> Will</label>
+                <label><input type="radio" name="q5" value="b"> Would</label>
+                <label><input type="radio" name="q5" value="c"> Had</label>
+            </div>
+
+            <div class="atividade">
+                <h3>6. Advanced Vocabulary</h3>
+                <p>Qual palavra significa "Confiável" em inglês?</p>
+                <label><input type="radio" name="q6" value="a"> Reliable</label>
+                <label><input type="radio" name="q6" value="b"> Dangerous</label>
+                <label><input type="radio" name="q6" value="c"> Careless</label>
+            </div>
+        </section>
+
+        <button onclick="corrigirAtividade()">Finalizar atividade</button>
+
+        <div id="resultado"></div>
+    </main>
+
+    <script>
+        function corrigirAtividade() {
+            const respostas = {
+                q1: "a",
+                q2: "b",
+                q3: "c",
+                q4: "a",
+                q5: "b",
+                q6: "a"
+            };
+
+            let acertos = 0;
+            let respondidas = 0;
+
+            for (let pergunta in respostas) {
+                const selecionada = document.querySelector('input[name="' + pergunta + '"]:checked');
+
+                if (selecionada) {
+                    respondidas++;
+
+                    if (selecionada.value === respostas[pergunta]) {
+                        acertos++;
+                    }
+                }
+            }
+
+            const resultado = document.getElementById("resultado");
+
+            if (respondidas < 6) {
+                resultado.innerHTML = "Responda todas as questões antes de finalizar!";
+            } else {
+                resultado.innerHTML = "Você acertou " + acertos + " de 6 questões!";
+            }
+        }
+    </script>
+</body>
+</html>
