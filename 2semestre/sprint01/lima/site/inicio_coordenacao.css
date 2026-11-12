@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef2f8;
+}
+
+header{
+    width:100%;
+    height:90px;
+    background:#1d3f78;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:5px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo-icon i{
+    color:#e63946;
+    font-size:30px;
+    transform:rotate(45deg);
+}
+
+.logo h1{
+    font-size:46px;
+}
+
+.guia{
+    color:white;
+}
+
+.sesi{
+    color:#e63946;
+}
+
+.usuario{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.texto-usuario{
+    text-align:right;
+    color:white;
+}
+
+.texto-usuario h3{
+    font-size:16px;
+}
+
+.texto-usuario p{
+    font-size:13px;
+}
+
+.usuario img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:3px solid white;
+}
+
+main{
+    width:1200px;
+    margin:40px auto;
+}
+
+h2{
+    width:360px;
+    margin:0 auto 35px;
+    background:#d63b4a;
+    color:white;
+    text-align:center;
+    padding:12px;
+    border-radius:30px;
+    border:3px solid #173d7a;
+}
+
+.resumo{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.card-resumo{
+    flex:1;
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card-resumo:hover{
+    transform:translateY(-5px);
+}
+
+.card-resumo i{
+    color:#d63b4a;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.card-resumo h3{
+    color:#173d7a;
+    font-size:32px;
+}
+
+.card-resumo p{
+    color:#555;
+}
+
+.conteudo{
+    display:flex;
+    gap:30px;
+}
+
+.painel{
+    flex:1;
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 6px 15px rgba(0,0,0,.12);
+}
+
+.painel h3{
+    color:#173d7a;
+    margin-bottom:20px;
+}
+
+.item{
+    padding:15px;
+    background:#f7f8fb;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.item b{
+    color:#173d7a;
+}
+
+.item p{
+    margin-top:5px;
+    color:#555;
+}
